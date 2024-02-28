@@ -3,12 +3,12 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'   //don't change this
-        DOCKER_IMAGE = 'cithit/roseaw-metal'         //do change this
+        DOCKER_IMAGE = 'cithit/sandlizh-metal'         //do change this
         // Use Jenkins build number as part of the image tag
         IMAGE_TAG = "build-${BUILD_NUMBER}"
-        GITHUB_URL = 'https://github.com/miamioh-roseaw/metal.git'  //do change this
+        GITHUB_URL = 'https://github.com/sandlizh/sandlizh-lb-example.git'  //do change this
         
-        KUBECONFIG = credentials('roseaw-225')  //do change this
+        KUBECONFIG = credentials('sandlizh-225')  //do change this
     }
 
     stages {
