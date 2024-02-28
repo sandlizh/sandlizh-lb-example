@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: cithit/roseaw-metal:latest  #<---change this
+        image: cithit/sandlizh-metal:latest  #<---change this
         ports:
         - containerPort: 80  # Expose NGINX on port 80      
 ---
@@ -41,7 +41,7 @@ metadata:
   name: nginx-internal-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.10.121 # <-----change this!!!!
+  loadBalancerIP: 10.48.10.221 # <-----change this!!!!
   ports:
   - protocol: TCP
     port: 80
